@@ -25,6 +25,8 @@
 </p>
 
 <input type="button" value="意味を表示" onclick="btn1_click()" /><br/>
+<input type="button" value="テスト" onclick="hanyo_click(p1)" /><br/>
+	
 <input type="button"  value="更新" onclick="koshin()"><br/>
     
 <script>
@@ -45,6 +47,15 @@ function btn1_click(){
 	
 //p_タグに引数を渡すと該当箇所だけ表示するようにしたい
 function hanyo_click(p_tag){
+	var y1 = document.getElementById(p_tag);
+
+	if(y1.style.display=="block"){
+		// noneで非表示
+		y1.style.display ="none";
+	}else{
+		// blockで表示
+		y1.style.display ="block";
+	}
 }
 	
 function koshin(){
