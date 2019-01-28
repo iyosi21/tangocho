@@ -42,7 +42,11 @@ function btn1_click(){
 		y1.style.display ="block";
 	}
 }
-    
+	
+//p_タグに引数を渡すと該当箇所だけ表示するようにしたい
+function hanyo_click(p_tag){
+}
+	
 function koshin(){
   location.reload();
 }
